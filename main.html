@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SF BEN</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Career</a></li>
+      <li><a href="#">AppAssessor</a></li>
+      <li><a href="#">Salesforce News</a></li>
+      <li><a href="#">Articles by Role</a></li>
+    </ul>
+    <form class="search-form" method="GET" action="search.php">
+      <input type="text" name="query" placeholder="Search...">
+      <button type="submit">Search</button>
+    </form>
+  </nav>
+
+  <main>
+    <section class="article-list">
+      <h2>Latest Articles</h2>
+      <div id="article-container">
+        <?php include 'get_articles.php'; ?>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="hero">
+        <div class="hero-image">
+          <img src="hero_image.jpg" alt="Featured Article Image">
+        </div>
+        <div class="hero-content">
+          <h2>Are Salesforce Certifications Still Relevant?</h2>
+          <p>Top Voices Join the Great Cert Debate</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <div class="ad">
+          <img src="ad1.jpg" alt="Ad 1">
+        </div>
+        <div class="ad1">
+          <img src="ad2.jpg" alt="Ad 2">
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-bottom">
+      <p>&copy; 2023 SF BEN. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
